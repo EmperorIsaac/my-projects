@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+<form action="#" method="post">
+    <div>
+        <label for="name">Full Name</label><br>
+        <input type="text" name="full_name" id="name" required>
+    </div>
+
+    <div>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" required><br>
+    </div>
+
+    <div>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" required><br>
+    </div>
+
+    <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age" required><br>
+    </div>
+
+    <div>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label><br>
+    </div>
+
+    <div>
+        <label for="country">Country:</label><br>
+        <select name="country" id="country" required>
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+    </div>
+
+    <div>      
+        <label>Select your hobbies:</label><br>
+        <input type="checkbox" name="hobbies" id="reading" value="Reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" name="hobbies" id="traveling" value="Traveling">
+        <label for="traveling">Traveling</label><br>
+        <input type="checkbox" name="hobbies" id="sports" value="Sports">
+        <label for="sports">Sports</label><br>
+    </div>
+
+    <div>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" rows="4"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

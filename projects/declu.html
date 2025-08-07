@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Declutter & Sell</title>
+  <link rel="stylesheet" href="declu.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Declutter & Sell 🧼🛍️</h1>
+
+    <section class="form-section">
+      <h2>Post an Item</h2>
+      <form id="marketForm">
+        <input type="text" id="itemName" placeholder="Item name" required />
+        <input type="number" id="itemPrice" placeholder="Price (₦)" required />
+        <input type="file" id="itemImage" accept="image/*" required />
+        <button type="submit">Post Item</button>
+      </form>
+    </section>
+
+    <section class="marketplace">
+      <h2>Marketplace</h2>
+      <div id="marketItems" class="items-grid"></div>
+    </section>
+  </div>
+
+  <script src="declu.js"></script>
+</body>
+</html>

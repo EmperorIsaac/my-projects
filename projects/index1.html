@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="International Driving School - Professional driver education for confident drivers." />
+  <link rel="stylesheet" href="style1.css">
+  <title>International Driving School</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo" tabindex="0">International Driving School</div>
+      <ul>
+        <li><a href="#home" tabindex="0">Home</a></li>
+        <li><a href="#courses" tabindex="0">Courses</a></li>
+        <li><a href="#instructors" tabindex="0">Instructors</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" tabindex="0" aria-label="Home section">
+      <h1>Welcome to International Driving School</h1>
+      <p>Learn to drive with us and become a confident driver!</p>
+      <h5>The School is Registered by FRSC</h5>
+      <a href="signup.html" class="btn-link" aria-label="Go to sign up form to book a lesson">Book a Lesson</a>
+    </section>
+
+    <section id="courses" tabindex="0" aria-label="Courses offered">
+      <h2>Our Courses</h2>
+      <ul>
+        <li tabindex="0">Manual Transmission</li>
+        <li tabindex="0">Automatic Transmission</li>
+        <li tabindex="0">Defensive Driving</li>
+      </ul>
+    </section>
+
+    <section id="instructors" tabindex="0" aria-label="Driving instructors">
+      <h2>Meet Our Instructors</h2>
+      <div class="instructors-container">
+        <article class="instructor" tabindex="0" aria-label="Instructor John Doe">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fe8afa8b-6110-4054-8eaf-d6b0eea6efd1.png" alt="Instructor John Doe smiling" />
+          <p>John Doe</p>
+        </article>
+        <article class="instructor" tabindex="0" aria-label="Instructor Jane Smith">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e374a8e4-fe14-446d-b9e8-a41019eeeab9.png" alt="Instructor Jane Smith smiling" />
+          <p>Jane Smith</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" tabindex="0" aria-label="Contact form">
+      <h2>Get in Touch</h2>
+      <form id="contactForm" novalidate>
+        <h4>Call: 0806456347</h4>
+        <h4>Email: internationaldrivingschooljos@gmail.com</h4>
+        <input type="text" id="name" name="name" placeholder="Name" aria-label="Name" required />
+        <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+        <textarea id="message" name="message" placeholder="Message" aria-label="Message" required></textarea>
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+      <p id="formMessage" role="alert" aria-live="polite" style="margin-top:1rem; font-weight:600;"></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 International Driving School. All rights reserved.
+  </footer>
+</body>
+<script src="script1.js"></script>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf0eb;
+    color: #1d1d1d;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #001f3f;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 500;
+  }
+  
+  .sign-in-button {
+    padding: 8px 16px;
+    border: 2px solid #001f3f;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+  }
+  
+ 
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    color: #0c1b3f;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #4a4a4a;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .primary-btn {
+    background-color: #e56a54;
+    color: white;
+  }
+  
+  .secondary-btn {
+    background-color: #1d2d5c;
+    color: white;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    height: auto;
+  }
+  

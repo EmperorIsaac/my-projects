@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sign up for lessons at International Driving School – become a confident, skilled driver." />
+  <title>Sign Up - International Driving School</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo" tabindex="0">International Driving School</div>
+      <ul>
+        <li><a href="index1.html" tabindex="0">Home</a></li>
+        <li><a href="#courses" tabindex="0">Courses</a></li>
+        <li><a href="#instructors" tabindex="0">Instructors</a></li>
+        <li><a href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="signup" aria-label="Sign up form" tabindex="0">
+      <h1>Sign Up for Your Driving Lessons</h1>
+      <p>Fill out the form below to register and start your journey towards confident driving.</p>
+      <form id="signupForm" novalidate>
+        <label for="fullName">Full Name<span aria-hidden="true">*</span></label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" aria-required="true" required />
+
+        <label for="email">Email Address<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" aria-required="true" required />
+
+        <label for="phone">Phone Number<span aria-hidden="true">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="0806456347" aria-required="true" required pattern="^\+?[\d\s\-]{7,15}$" />
+
+        <label for="course">Select Course<span aria-hidden="true">*</span></label>
+        <select id="course" name="course" aria-required="true" required>
+          <option value="" disabled selected>Select a course</option>
+          <option value="manual">Manual Transmission - ₦40,000</option>
+          <option value="automatic">Automatic Transmission - ₦60,000</option>
+          <option value="defensive">Defensive Driving - ₦80,000</option>
+        </select>
+
+        <label for="preferredDate">Preferred Lesson Date<span aria-hidden="true">*</span></label>
+        <input type="date" id="preferredDate" name="preferredDate" aria-required="true" required min="" />
+
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" placeholder="Let us know if you have any special requirements or questions." rows="4"></textarea>
+
+        <button type="submit" aria-label="Submit sign up form">Sign Up</button>
+      </form>
+      <p id="formMessage" role="alert" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 International Driving School. All rights reserved.
+  </footer>
+
+  <script src="signup.js"></script>
+</body>
+</html>
