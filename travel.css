@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('image/car.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f3f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(255 255 255 / 0.15);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.logo {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #5a09bd;
+  user-select: none;
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  z-index: 1;
+}
+nav ul li {
+  margin: 0;
+}
+nav a {
+  color: #5a09bd;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+  background-color: #5a09bd;
+  color: #fff;
+}
+.button.first > button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5a09bd;
+  background: transparent;
+  border: 2px solid #5a09bd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  z-index: 1;
+}
+.button.first > button:hover {
+  background-color: #5a09bd;
+  color: white;
+}
+main,
+section.hero {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px 40px;
+  text-align: center;
+}
+.hero-content {
+  max-width: 480px;
+  background: rgba(0 0 0 / 0.35);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.3);
+  user-select: none;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5a09bd;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  color: #eee;
+  line-height: 1.5;
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 130px;
+  user-select: none;
+}
+.btn.solid {
+  background-color: #5a09bd;
+  color: white;
+}
+.btn.solid:hover {
+  background-color: #3b056e;
+}
+.btn.outline {
+  background-color: transparent;
+  border: 3px solid #5a09bd;
+  color: #5a09bd;
+}
+.btn.outline:hover {
+  background-color: #5a09bd;
+  color: white;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main,
+  section.hero {
+    padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .btn {
+    width: 100%;
+    min-width: auto;
+  }
+}

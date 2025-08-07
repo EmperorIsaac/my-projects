@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blue Travels - Sign Up</title>
+<link rel="stylesheet" href="travelsignup.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <main class="signup-container" role="main" aria-labelledby="signup-heading">
+    <h1 id="signup-heading">Create Your Account</h1>
+    <form id="signup-form" novalidate>
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" autocomplete="name" required aria-required="true" />
+        <span class="material-icons input-icon" aria-hidden="true">person</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-required="true" />
+        <span class="material-icons input-icon" aria-hidden="true">email</span>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+234" required aria-required="true" pattern="^\+?[0-9\s\-]{7,15}$" />
+        <span class="material-icons input-icon" aria-hidden="true">phone</span>
+      </div>
+      <div class="form-group" style="position: relative;">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" placeholder="••••••••" required aria-required="true" minlength="8" />
+        <span class="toggle-password material-icons" id="togglePassword" role="button" tabindex="0" aria-label="Toggle password visibility">visibility</span>
+      </div>
+      <div class="form-group" style="position: relative;">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" placeholder="••••••••" required aria-required="true" minlength="8" />
+        <span class="toggle-password material-icons" id="toggleConfirmPassword" role="button" tabindex="0" aria-label="Toggle confirm password visibility">visibility</span>
+      </div>
+      <button type="submit" aria-live="polite">Sign Up</button>
+    </form>
+    <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+  </main>
+</body>
+<script src="travelsignup.js"></script>
+</html>
